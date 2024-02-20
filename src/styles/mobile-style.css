@@ -1,15 +1,46 @@
 /* mobile version */
 @media (max-width: 500px) {
     body {
-        background: wheat;
         display: flex;
         flex-direction: column;
     }
 
+    .App {
+        width: 100%;
+
+    }
+
+    .nav {
+        display: none;
+        height: 100%;
+        width: inherit;
+        background: rgba(53, 53, 53, 0.7);
+        backdrop-filter: blur(4.5px);
+        position: absolute;
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-button {
+        font-size: 60px;
+        color: white;
+        height: 25%;
+        width: inherit;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-button:hover {
+        background: rgba(40, 40, 40, 0.7);
+    }
+
     .home {
+        width: inherit;
         display: flex;
         flex-direction: column-reverse;
-        margin:  24px auto;
+        margin:  24px 0;
     }
 
     .info {
@@ -27,7 +58,33 @@
         margin: 0 auto 12px;
     }
 
+    
+    .photo {
+        height: 80%;
+        width: 80%;
+        background-image: url("../attachments/me.png");
+        background-size: 400px;
+        animation: 15s cool-photo-border infinite alternate;
+        position: relative;
+    }
+  
+
     .skills-section {
         justify-content: center;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 0;
+    }
+
+    .footer-gret {
+        display: none;
+    }
+
+    .footer-contacts {
+        width: 100%;
     }
 }
