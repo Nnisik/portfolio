@@ -1,4 +1,5 @@
 import './styles/style.css';
+import './styles/mobile-style.css';
 import Nav from './components/Nav';
 import Home from './components/Home';
 import Contacts from './components/Contacts';

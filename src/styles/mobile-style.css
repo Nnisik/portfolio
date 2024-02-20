@@ -1,0 +1,33 @@
+/* mobile version */
+@media (max-width: 500px) {
+    body {
+        background: wheat;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home {
+        display: flex;
+        flex-direction: column-reverse;
+        margin:  24px auto;
+    }
+
+    .info {
+        text-align: center;
+    }
+
+    .info > h1 {
+        font-size: 32px;
+    }
+
+    .info > p {
+        width: 80%;
+        height: fit-content;
+        text-align:justify;
+        margin: 0 auto 12px;
+    }
+
+    .skills-section {
+        justify-content: center;
+    }
+}
