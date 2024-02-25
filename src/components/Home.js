@@ -1,6 +1,6 @@
 function Link(props) {
     return (
-        <a href={ props.href } className="link">
+        <a href={ props.href } className="home-link">
             <img className='link-icon' src={ props.icon } alt="" />
         </a>
     );
@@ -8,13 +8,13 @@ function Link(props) {
 
 function Skill(props) {
     return (
-        <img className="skill" src={ props.icon } alt=""></img>
+        <img className="home-skill" src={ props.icon } alt=""></img>
     );
 }
 
 function Links() {
     return (
-        <div className="links-section">
+        <div className="home-links-section">
             <Link name="LinkedIn" href="https://linkedin.com/in/nina-samykova-1522a225b" icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" />
             <Link name="GitHub" href="https://github.com/Nnisik" icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
         </div>
@@ -23,7 +23,7 @@ function Links() {
 
 function Skills() {
     return (
-        <div className="skills-section">
+        <div className="home-skills-section">
             <Skill name="HTML" icon="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" />
             <Skill name="CSS" icon="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" />
             <Skill name="SaSS" icon="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" />
@@ -39,14 +39,14 @@ function Skills() {
 
 export default function Home() {
     return (
-        <div className="home" id="home">
-            <div className="info">
+        <div id="home">
+            <div className="home-info">
                 <h1>Full-Stack Developer</h1>
                 <p>Hi! I'm Nina. I'm a junour full-stack web developer with experience in HTML, CSS, JavaScript & Python.</p>
                 <Links />
                 <Skills />
             </div>
-            <div className="photo">
+            <div className="home-photo">
             </div>
         </div>
     );

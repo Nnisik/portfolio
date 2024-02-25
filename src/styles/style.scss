@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 500px){
+    /* mobile navbar style */
+    #nav {
+        display: flex;
+        justify-content: end;
+    }
+    .nav-btn {
+        height: 50px;
+        width: 50px;
+    }
+    .nav-btn p {
+        display: none;
+    }
+    #id-home {
+        background: url("../attachments/navbar/icons8-home-50.png");
+    }
+    #id-about {
+        display: none;
+    }
+    #id-portfolio {
+        background: url("../attachments/navbar/icons8-view-quilt-50.png");
+    }
+    #id-contact {
+        background: url("../attachments/navbar/icons8-contacts-50.png");
+    }
+    /* mobile home section style */
+    #home {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .home-info {
+        width: 380px;
+        margin: auto;
+    }
+    .home-links-section,
+    .home-skills-section {
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .home-links-section {
+        margin: 12px 24px;
+    }
+    .home-skills-section {
+        justify-content: center;
+        margin: 24px 0;
+    }
+    .home-link {
+        height: 4vh;
+        width: 4vh;
+    }
+    .home-skill {
+        height: 3vh;
+        width: 3vh;
+        transition-duration: 0.3s;
+    }
+    .home-skill:hover {
+        scale: 1.2;
+    }
+    .home-photo {
+        height: 400px;
+        width: 400px;
+        background-image: url("../attachments/me.png");
+        background-size: 400px;
+        animation: 15s cool-photo-border infinite alternate;
+        position: relative;
+        margin: 3vh auto 1vh;
+    }
+    /* mobile about section style */
+    #about {
+        width: 380px;
+        margin: 2vh auto;
+    }
+    #about h1 {
+        text-align: center;
+    }
+    #about p {
+        margin: 1vh 0;
+    }
+    /* mobile portfolio section style */
+    #portfolio {
+        width: calc(100% - 2vh * 2);
+        margin: 2vh;
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+    }
+    #portfolio  h1{
+        text-align: center;
+    }
+    .project {
+        background: rgba(129, 129, 129, 0.3);
+        width: calc(100% - 12px * 2);
+        margin: 0 auto;
+        padding: 12px;
+        border-radius: 18px;
+    }
+    .project-promo {
+        background: rgba(129, 129, 129, 0.3);
+        border-radius: 12px;
+    }
+    .progect-img {
+        width: 100%;
+        aspect-ratio: 16/9;
+        border-radius: 12px;
+        border: none;
+    }
+    .project-links {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .project-github-link {
+        height: 30px;
+        width: 30px;
+        background: url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg");
+    }
+    .project-website-link {
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+    .project-descrip,
+    .project-descrip p {
+        margin: 1vh 0;
+    }
+    .project-stack {
+        text-align: center;
+        letter-spacing: 2px;
+    }
+    /* mobile portfolio section style */
+    #contact {
+        width: 100%;
+        text-align: center;
+    }
+    .footer-contacts-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+    }
+    .contact img {
+        height: 3vh;
+        margin-right: 2vh;
+    }
+}
+
+@media (min-width: 501px){
+    body {
+        background: green;
+    }
+}
+
+@media (min-width: 1001px){
+    body {
+        background: blue;
+    }
+}
+
+/* animations */
+@keyframes cool-photo-border {
+    0%,
+    100% {
+      border-radius: 50% 50% 60% 70%;
+    }
+    15% {
+      border-radius: 60% 70% 60% 60%;
+    }
+    30% {
+      border-radius: 50% 50% 80% 60%;
+    }
+    45% {
+      border-radius: 60% 70% 60% 60%;
+    }
+    60% {
+      border-radius: 60% 70% 50% 50%;
+    }
+    75% {
+      border-radius: 70% 60% 70% 50%;
+    }
+    90% {
+      border-radius: 60% 70% 50% 50%;
+    }
+  }

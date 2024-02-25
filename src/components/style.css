@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgb(250, 250, 250);
+}
+
+.home,
+.about {
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+
+.home,
+.about {
+  align-items: center;
+}
+
+/* navbar style */
+.nav {
+  position: fixed;
+  overflow: hidden;
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  margin-right: 2vh;
+}
+
+.nav-button {
+  font-size: 2vh;
+  font-weight: bold;
+  margin: auto 12px;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #252525;
+  text-decoration: none;
+}
+
+/* home section styling */
+.home {
+  min-height: 100vh;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-right: 24px;
+  width: 550px;
+}
+
+.info > h1 {
+  font-size: 48px;
+}
+
+.info > p {
+  margin: 12px 0;
+}
+
+.photo {
+  margin-left: 24px;
+  height: 400px;
+  width: 400px;
+  background-image: url("../attachments/me.png");
+  background-size: 400px;
+  animation: 15s cool-photo-border infinite alternate;
+  position: relative;
+}
+
+.profile-photo {
+  height: 400px;
+  width: 400px;
+}
+
+.links-section,
+.skills-section {
+  margin: 12px 0;
+}
+
+.skills-section {
+  display: flex;
+  margin-top: 48px;
+}
+
+.link,
+.skill {
+  margin: 0 6px;
+}
+
+.link img:hover,
+.skill:hover {
+  transition-duration: 0.3s;
+  scale: 1.2;
+}
+
+.skill {
+  height: 30px;
+  width: 30px;
+}
+
+.link-icon {
+  height: 30px;
+  width: 30px;
+}
+
+/* about section styling */
+#about {
+  height: fit-content;
+  margin: 48px auto;
+  display: grid;
+  grid-template-columns: 500px 500px;
+  gap: 10px;
+}
+
+.about-me {
+  background: rebeccapurple;
+}
+
+.about-decor-elem {
+  background: rgb(153, 51, 119);
+}
+
+/* portfolio section styling */
+#portfolio {
+  height: fit-content;
+  width: initial;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project {
+  width: calc(800px + (12px * 4));
+  height: fit-content;
+  background: orchid;
+  display: flex;
+  align-items: center;
+  margin: 12px 0;
+  border-radius: 18px;
+}
+
+.project-promo {
+  margin: 12px;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: calc(300px + 30px);
+  width: 50%;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.project-github-link {
+  height: 30px;
+  width: 30px;
+  background: url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg");
+}
+
+.project-website-link {
+  font-weight: bold;
+}
+
+.project-descrip {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 45%;
+  height: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.project-descrip > p {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* contacts section styling */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+  height: fit-content;
+}
+
+.footer-gret,
+.footer-contacts {
+  width: 40%;
+  margin: 0 5%;
+}
+
+.footer-gret {
+  font-size: 60px;
+  font-size: bold;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.footer-contacts-section {
+  margin: 0 12px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.contact-badge {
+  margin: 10px 6px 10px 0;
+  height: 30px;
+}
+/* mobile version */
+@media (max-width: 499px) {
+  .App {
+    width: 100%;
+  }
+
+  .nav {
+    display: none;
+    height: 100%;
+    width: inherit;
+    background: rgba(53, 53, 53, 0.7);
+    backdrop-filter: blur(4.5px);
+    position: absolute;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-button {
+    font-size: 60px;
+    color: white;
+    height: 25%;
+    width: inherit;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-button:hover {
+    background: rgba(40, 40, 40, 0.7);
+  }
+
+  #home {
+    display: flex;
+    flex-direction: column;
+    width: (100% - 5vh);
+    background: red;
+  }
+
+  .info {
+    text-align: center;
+  }
+
+  .info > h1 {
+    font-size: 32px;
+  }
+
+  .info > p {
+    width: 80%;
+    height: fit-content;
+    text-align: justify;
+    margin: 0 auto 12px;
+  }
+
+  .photo {
+    height: 400px;
+    width: 400px;
+    background-image: url("../attachments/me.png");
+    background-size: 400px;
+    animation: 15s cool-photo-border infinite alternate;
+    position: relative;
+  }
+
+  .skills-section {
+    justify-content: center;
+  }
+
+  .project {
+    width: calc(100% - 12px * 2);
+    height: fit-content;
+    background: orchid;
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+    border-radius: 18px;
+  }
+  
+  .project-promo {
+    margin: 12px;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: calc(300px + 30px);
+    width: calc(100% - 12px * 2);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .project-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .project-github-link {
+    height: 30px;
+    width: 30px;
+    background: url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg");
+  }
+  
+  .project-website-link {
+    font-weight: bold;
+  }
+  
+  .project-descrip {
+    height: fit-content;
+    width: calc(100% - 12px * 2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 12px;
+  }
+  
+  .project-descrip > h3, 
+  .project-descrip > div {
+    margin: 1vh auto;
+  }
+
+  .project-descrip > p {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0;
+  }
+
+  .footer-gret {
+    display: none;
+  }
+
+  .footer-contacts {
+    width: 100%;
+  }
+}
+
+/* animations */
+@keyframes cool-photo-border {
+  0%,
+  100% {
+    border-radius: 54% 57% 62% 74%;
+  }
+  15% {
+    border-radius: 62% 70% 63% 60%;
+  }
+  30% {
+    border-radius: 51% 55% 80% 68%;
+  }
+  45% {
+    border-radius: 68% 71% 63% 63%;
+  }
+  60% {
+    border-radius: 64% 73% 57% 58%;
+  }
+  75% {
+    border-radius: 79% 67% 71% 57%;
+  }
+  90% {
+    border-radius: 66% 78% 57% 55%;
+  }
+}

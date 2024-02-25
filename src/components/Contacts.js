@@ -19,14 +19,9 @@ function ContactsSection() {
 
 export default function Contacts() {
     return (
-        <div className="footer" id="contact">
-            <div className="footer-gret">
-                Thank you for watching!
-            </div>
-            <div className="footer-contacts">
-                <h1>Feel free to contact me:</h1>
-                <ContactsSection />
-            </div>
+        <div id="contact">
+            <h1>Feel free to contact me:</h1>
+            <ContactsSection />
         </div>
     );
 }

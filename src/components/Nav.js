@@ -1,16 +1,18 @@
 function NavButton(props) {
     return (
-        <a className='nav-button' href={ props.id }>{ props.name }</a>
+        <a className='nav-btn' href={ "#" + props.id } id={"id-" + props.id}>
+            <p>{ props.name }</p>
+        </a>
     );
 }
 
 export default function Nav() {
     return (
-        <div className='nav'>
-            <NavButton id="#home" name='Home' />
-            <NavButton id="#about" name='About' />
-            <NavButton id="#portfolio" name='Projects' />
-            <NavButton id="#contact" name='Contact' />
+        <div id='nav'>
+            <NavButton icon="../attachments/navbar/icons8-home-50.png" id="home" name='Home' />
+            <NavButton icon="" id="about" name='About' />
+            <NavButton icon="../attachments/navbar/icons8-view-quilt-50.png" id="portfolio" name='Projects' />
+            <NavButton icon="../attachments/navbar/icons8-contacts-50.png" id="contact" name='Contact' />
         </div>
     );
 }
