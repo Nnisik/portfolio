@@ -1,5 +1,4 @@
-function Project(props, {tools}) {
-    console.log(tools)
+export default function Project(props) {
     return (
         <div className="project">
             <div className="project-promo">
@@ -19,14 +18,3 @@ function Project(props, {tools}) {
         </div>
     );
 }
-
-export default function Portfolio() {
-    return (
-        <div id="portfolio">
-            <h1>Portfolio</h1>
-            <Project name="Bulleting Board" descrip="k dhf8eb ue 8egh e98  eyhe heg 8ye  uegy2 3fi nsi bv8 8qwsnch yg7w no8dc88wfb wy7x7q284b xjsygd7 bb fy gef y 2 hyasnc q8q y3r o" tools={"PHP    ReactJS"} />
-            <Project name="Bulleting Board" descrip="shhmbvuie,i wije9" tools={ "PHP    ReactJS"} />
-            <Project name="Bulleting Board" descrip="shhmbvuie,i wije9" tools={"PHP    ReactJS"} />
-        </div>
-    );
-} 

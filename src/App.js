@@ -1,9 +1,9 @@
 import './styles/style.css';
-import Nav from './components/Nav';
-import Home from './components/Home';
-import Contacts from './components/Contacts';
-import About from './components/About';
-import Portfolio from './components/Portfolio';
+import Nav from './components/Nav/Nav';
+import Home from  './components/Home/Home';
+import About from './components/About/About';
+import Portfolio from './components/Portfolio/Portfolio';
+import Contacts from './components/Contacts/Contacts';
 
 function App() {
   return (

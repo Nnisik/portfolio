@@ -5,48 +5,220 @@
 
 #nav {
     display: flex;
-    justify-content: end;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-right: 2vh;
+}
+
+.nav-me {
+    font-size: 3vh;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3vh;
+}
+
+.nav-btn {
+    font-size: 2vh;
+    font-weight: bold;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #252525;
+    text-decoration: none;
 }
 
 #home {
     display: flex;
+    justify-content: center;
+    gap: 5vh;
+    height: 80vh;
 }
 
-.home-links-section,
-.home-skills-section {
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+.home-info {
+    width: 30%;
+    text-align: center;
+    margin: auto 0;
+}
+
+.home-info p {
+    width: 50%;
+    margin: 1vh auto;
 }
 
 .home-links-section {
-    margin: 12px 24px;
+    display: flex;
+    justify-content: center;
+    gap: 2vh;
+    height: fit-content;
+    width: 100%;
+    margin: 2vh 0;
 }
 
 .home-skills-section {
+    font-weight: bold;
+}
+
+.home-stack-section {
+    margin: 1vh auto;
+    display: flex;
     justify-content: center;
-    margin: 24px 0;
+    gap: 1vh;
 }
 
-.home-link {
-    height: 4vh;
-    width: 4vh;
-}
-
-.home-skill {
-    height: 3vh;
-    width: 3vh;
+.home-badge-icon {
+    height: 30px;
+    aspect-ratio: 1/1;
     transition-duration: 0.3s;
 }
 
-.home-skill:hover {
+.home-badge-icon:hover {
     scale: 1.2;
+}
+
+#home-photo {
+    height: 400px;
+    width: 400px;
+    background-image: url("../assets/home/me.png");
+    background-size: 400px;
+    animation: 15s cool-photo-border infinite alternate;
+    position: relative;
+    margin: auto 0;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 5vh;
+    width: 100%;
+}
+
+#about-decor-elem {
+    width: 400px;
+    aspect-ratio: 3/4;
+    background: teal;
+    position: relative;
+    margin: auto 0;
+    border-radius: 20px;
+}
+
+.about-me {
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 1vh 0;
+}
+
+.about-me > p {
+    text-align: start;
+    margin: 2vh 0;
 }
 
 .project-stack {
     text-align: center;
     letter-spacing: 2px;
+}
+
+
+#portfolio {
+    height: fit-content;
+    width: initial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5vh 0;
+}
+
+.project {
+    width: calc(800px + (12px * 4));
+    height: fit-content;
+    background: orchid;
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+    border-radius: 18px;
+}
+
+.project-promo {
+    margin: 12px;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: calc(300px + 30px);
+    width: 50%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.project-github-link {
+    height: 30px;
+    width: 30px;
+    background: url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg");
+}
+
+.project-website-link {
+    font-weight: bold;
+}
+
+.project-descrip {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 45%;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.project-descrip>p {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    gap: 2vh;
+}
+
+.contacts-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+    height: 30px;
+}
+
+.contact img {
+    height: 30px;
+    width: 30px;
+    margin: 0 10px;
 }
 
 @media (max-width: 500px) {
@@ -62,7 +234,7 @@
     }
 
     #id-home {
-        background: url("../attachments/navbar/icons8-home-50.png");
+        background: url("../assets/navbar/icons8-home-50.png");
     }
 
     #id-about {
@@ -70,11 +242,11 @@
     }
 
     #id-portfolio {
-        background: url("../attachments/navbar/icons8-view-quilt-50.png");
+        background: url("../assets/navbar/icons8-view-quilt-50.png");
     }
 
     #id-contact {
-        background: url("../attachments/navbar/icons8-contacts-50.png");
+        background: url("../assets/navbar/icons8-contacts-50.png");
     }
 
     /* mobile home section style */
@@ -87,14 +259,15 @@
         margin: auto;
     }
 
-    .home-photo {
+    #home-photo {
         height: 400px;
         width: 400px;
-        background-image: url("../attachments/me.png");
+        background-image: url("../assets/home/me.png");
         background-size: 400px;
         animation: 15s cool-photo-border infinite alternate;
         position: relative;
         margin: 3vh auto 1vh;
+        border: 5px solid rgba(255, 255, 255, 0.5);
     }
 
     /* mobile about section style */
@@ -193,210 +366,6 @@
     .contact img {
         height: 3vh;
         margin-right: 2vh;
-    }
-}
-
-@media (min-width: 501px) {
-
-    #home,
-    #about {
-        height: fit-content;
-        display: flex;
-        justify-content: center;
-    }
-
-    #home,
-    #about {
-        align-items: center;
-    }
-
-    /* navbar style */
-    #nav {
-        height: 5vh;
-        width: 100%;
-        margin-right: 2vh;
-    }
-
-    .nav-btn {
-        font-size: 2vh;
-        font-weight: bold;
-        margin: auto 12px;
-        background: transparent;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        color: #252525;
-        text-decoration: none;
-    }
-
-    /* home section styling */
-    #home {
-        height: 100vh;
-    }
-
-    .home-info {
-        display: flex;
-        flex-direction: column;
-        margin-right: 24px;
-        width: 550px;
-    }
-
-    .home-info>h1 {
-        font-size: 48px;
-    }
-
-    .home-info>p {
-        margin: 12px 0;
-    }
-
-    .home-photo {
-        margin-left: 24px;
-        height: 400px;
-        width: 400px;
-        background-image: url("../attachments/me.png");
-        background-size: 400px;
-        animation: 15s cool-photo-border infinite alternate;
-        position: relative;
-    }
-
-    .profile-photo {
-        height: 400px;
-        width: 400px;
-    }
-
-    .links-section,
-    .skills-section {
-        margin: 12px 0;
-    }
-
-    .skills-section {
-        display: flex;
-        margin-top: 48px;
-    }
-
-    .link,
-    .skill {
-        margin: 0 6px;
-    }
-
-    .link img:hover,
-    .skill:hover {
-        transition-duration: 0.3s;
-        scale: 1.2;
-    }
-
-    .skill {
-        height: 30px;
-        width: 30px;
-    }
-
-    .link-icon {
-        height: 30px;
-        width: 30px;
-    }
-
-    /* about section styling */
-    #about {
-        height: fit-content;
-        margin: 48px auto;
-        display: grid;
-        grid-template-columns: 500px 500px;
-        gap: 10px;
-    }
-
-    .about-me {
-        background: rebeccapurple;
-    }
-
-    .about-decor-elem {
-        background: rgb(153, 51, 119);
-    }
-
-    /* portfolio section styling */
-    #portfolio {
-        height: fit-content;
-        width: initial;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .project {
-        width: calc(800px + (12px * 4));
-        height: fit-content;
-        background: orchid;
-        display: flex;
-        align-items: center;
-        margin: 12px 0;
-        border-radius: 18px;
-    }
-
-    .project-promo {
-        margin: 12px;
-        background-color: rgba(255, 255, 255, 0.5);
-        height: calc(300px + 30px);
-        width: 50%;
-        border-radius: 12px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .project-links {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    .project-github-link {
-        height: 30px;
-        width: 30px;
-        background: url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg");
-    }
-
-    .project-website-link {
-        font-weight: bold;
-    }
-
-    .project-descrip {
-        background-color: rgba(255, 255, 255, 0.5);
-        width: 45%;
-        height: 300px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-
-    .project-descrip>p {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    /* contacts section styling */
-    .footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 12px 0;
-        height: fit-content;
-    }
-
-    .footer-contacts-section {
-        margin: 0 12px;
-    }
-
-    .contact {
-        display: flex;
-        align-items: center;
-        font-size: 16px;
-        font-weight: bold;
-    }
-
-    .contact-badge {
-        margin: 10px 6px 10px 0;
-        height: 30px;
     }
 }
 
