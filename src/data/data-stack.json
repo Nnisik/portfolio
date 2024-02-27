@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "name": "HTML",
+        "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+    },
+    {
+        "id": 2,
+        "name": "CSS",
+        "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+    },
+    {
+        "id": 3,
+        "name": "SaSS",
+        "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"
+    },
+    {
+        "id": 4,
+        "name": "JavaScript",
+        "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+    },
+    {
+        "id": 5,
+        "name": "React JS",
+        "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+    },
+    {
+        "id": 6,
+        "name": "Python",
+        "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+    },
+    {
+        "id": 7,
+        "name": "Django",
+        "icon": "https://cdn.worldvectorlogo.com/logos/django.svg"
+    },
+    {
+        "id": 8,
+        "name": "Git",
+        "icon": "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
+    },
+    {
+        "id": 9,
+        "name": "sqlite",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-plain.svg"
+    }
+]

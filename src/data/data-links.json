@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "name": "LinkedIn",
+        "href": "https://linkedin.com/in/nina-samykova-1522a225b", 
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" 
+    },
+    {
+        "id": 2,
+        "name": "GitHub",
+        "href": "https://github.com/Nnisik", 
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" 
+    }
+]

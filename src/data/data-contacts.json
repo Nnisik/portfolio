@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "type": "email",
+        "text": "samnina805@gmail.com",
+        "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACFklEQVR4nO2YzUpbQRTHf/UjChYqIkIRQYRs3JUq0igIpa/QR4ivIH2DLktw415RuuhHuuxK6EIQBBeClBZKYyiCQhRLbRtzZeBcGC4T70xM5iY4Pzib3Dln/mfuyWHOhUAgEAgEmrMEbANVoA5EnqwOHANbwCItMACseRQcpVhJNFnTTeIjLQnrstEdPwBPgRz+yAFzQFnT0QAKNs7bmpMKkDXvND2bNg5VzUGdfNbMaXoqNg56t/FZNs3IJbpTKnr958mefEJTKvrif8A68Bj/jAOvgau7JBDbpQR71HndjACrwHkTLanc1otPJfhQB4QPAivArxQNTgm8APYNQX7IZn1tEP4AeAl8NexzKM9aTgARqYJ8N2ywBzy/g/gC8MUQ96ccUH8TTU4J6O1MBT0xbPgZeOIgfBZ4a4hzJiU6bKnJKYGYh7LJRWJtQ0TN3BJ7Srpa8mb7W5rEaIuaWlo8KWL+J3z+yu8T2toxEfgnsfZakp5ukyb3xVIOHw3lUANeidUMz5WP8m27JtcEYhaAnZQWqGwXWHaMHflIIEa13gOD8CPpZqpt0s0JINNTEfgmVnSdqLJOoN1EIYGMicIb6KU3UO/1kbLaZUP9vOtQv6U5fCJ73mt6NmwcFhM1V5ZT8P1ha14OUL/tPrMNULK40/i2Ny4nMNBFSTREfDydOY98m/Ln8f15vSJ7W5dNIBAIBO4fN6QO4/kYi3eUAAAAAElFTkSuQmCC"
+    },
+    {
+        "id": 2,
+        "type": "github",
+        "text": "https://github.com/Nnisik",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+    },
+    {
+        "id": 3,
+        "type": "linkedin",
+        "text": "https://linkedin.com/in/nina-samykova-1522a225b",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
+    }
+]
