@@ -4,3 +4,7 @@ This is my portfolio website, build using React JS. If you would like to see it,
 ### Technologies used 
 * React JS
 * SaSS
+## Testing
+Does not require testing.
+## Issues
+* in project section, images stopped appearing
