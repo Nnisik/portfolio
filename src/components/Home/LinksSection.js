@@ -11,7 +11,7 @@ function Link(props) {
 
 export default function LinksSection() {
   return (
-    <div className="home-links-section">
+    <div className="flex home-links-section">
       {linksData.map((link) => {
         return (
           <Link

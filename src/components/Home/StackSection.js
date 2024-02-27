@@ -5,7 +5,7 @@ export default function StackSection() {
   return (
     <div className="home-skills-section">
       Stack
-      <div className="home-stack-section">
+      <div className="flex home-stack-section">
         {stackData.map((skill) => {
           return <Badge key={skill.id} name={skill.name} icon={skill.icon} />;
         })}

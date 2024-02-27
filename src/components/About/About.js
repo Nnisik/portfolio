@@ -2,9 +2,9 @@ import aboutMeData from "../../data/data-about.json";
 
 export default function About() {
   return (
-    <div id="about">
+    <div id="about" className="flex">
       <div id="about-decor-elem"></div>
-      <div className="about-me">
+      <div className="flex about-me">
         <h1>About Me</h1>
         <p>
           A passinate goal-oriented Entry Level Full-Stack Web-Developer with

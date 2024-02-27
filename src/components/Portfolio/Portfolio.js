@@ -3,7 +3,7 @@ import dataProjects from "../../data/data-projects.json";
 
 export default function Portfolio() {
   return (
-    <div id="portfolio">
+    <div id="portfolio" className="flex">
       <h1>Portfolio</h1>
       {dataProjects.map((project) => {
         return (

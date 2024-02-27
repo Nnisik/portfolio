@@ -1,16 +1,16 @@
 export default function Project(props) {
   return (
-    <div className="project">
-      <div className="project-promo">
+    <div className="flex project">
+      <div className="flex project-promo">
         <img className="progect-img" src="" alt="" />
-        <div className="project-links">
+        <div className="flex project-links">
           <a href={props.githubLink} className="project-github-link"></a>
           <a href={props.websiteLink} className="project-website-link">
             Website
           </a>
         </div>
       </div>
-      <div className="project-descrip">
+      <div className="flex project-descrip">
         <h3>{props.name}</h3>
         <p>{props.about}</p>
         <div className="project-stack">
