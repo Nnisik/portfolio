@@ -2,42 +2,6 @@
     {
         "id": 1,
         "img": "",
-        "githubLink": "https://github.com/Nnisik/portfolio",
-        "websiteLink": "https://nnisik.github.io/portfolio/",
-        "name": "Portfolio",
-        "about": "React Portfolio.",
-        "tools": "ReactJS SaSS"
-    },
-    {
-        "id": 2,
-        "img": "",
-        "githubLink": "https://github.com/Nnisik/Wiki",
-        "websiteLink": "",
-        "name": "Wiki",
-        "about": "CS50w Project 1 - Wikipedia-like online encyclopedia.",
-        "tools": "Django HTML SaSS"
-    },
-    {
-        "id": 3,
-        "img": "",
-        "githubLink": "https://github.com/Nnisik/Coffee-App",
-        "websiteLink": "",
-        "name": "Coffee-App",
-        "about": "",
-        "tools": "ReactJS SaSS"
-    },
-    {
-        "id": 4,
-        "img": "",
-        "githubLink": "https://github.com/Nnisik/Rasa-Weather-Chatbot",
-        "websiteLink": "",
-        "name": "Weather Chatbot",
-        "about": "",
-        "tools": "Rasa Python"
-    },
-    {
-        "id": 5,
-        "img": "",
         "githubLink": "https://github.com/Nnisik/Search-Engine",
         "websiteLink": "",
         "name": "Search",
@@ -45,16 +9,7 @@
         "tools": "HTML SaSS"
     },
     {
-        "id": 6,
-        "img": "",
-        "githubLink": "https://github.com/Nnisik/Weather-App",
-        "websiteLink": "",
-        "name": "Weather App",
-        "about": "Small mobile weather application.",
-        "tools": "React Native"
-    },
-    {
-        "id": 7,
+        "id": 2,
         "img": "./projects/bulletboard.png",
         "githubLink": "https://github.com/Nnisik/Bulleting-Board",
         "websiteLink": "",
@@ -63,7 +18,7 @@
         "tools": "PHP ReactJS"
     },
     {
-        "id": 8,
+        "id": 3,
         "img": "./projects/neon-clock/png",
         "githubLink": "https://github.com/Nnisik/neon-clock",
         "websiteLink": "",
