@@ -7,15 +7,23 @@ export default function Portfolio() {
       <h1>Portfolio</h1>
       {dataProjects.map((project) => {
         return (
-          <Project
-            key={project.id}
-            img={project.img}
-            name={project.name}
-            about={project.about}
+          <Project 
+            key={project.id} 
+            img={project.img} 
+            name={project.name} 
+            about={project.about} 
             tools={project.tools}
+            githubLink={project.githubLink}
           />
-        );
+        )
       })}
+      <Project 
+        img= "./../assets/projects/neon-clock.png"
+        name="Neon Clock"
+        about="Minimalist neon clocks."
+        tools="HTML CSS JavaScript"
+        githubLink="https://github.com/Nnisik/neon-clock"
+      />
     </div>
   );
 }
