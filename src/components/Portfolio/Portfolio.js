@@ -7,23 +7,26 @@ export default function Portfolio() {
       <h1>Portfolio</h1>
       {dataProjects.map((project) => {
         return (
-          <Project 
-            key={project.id} 
-            img={project.img} 
-            name={project.name} 
-            about={project.about} 
-            tools={project.tools}
-            githubLink={project.githubLink}
-          />
-        )
+          <div className="flex project">
+            <div className="flex project-promo">
+              <img src={project.img} alt="" />
+              <div className="flex project-links">
+                <a href={project.githubLink} className="project-github-link"></a>
+                <a href={project.websiteLink} className="project-website-link">
+                  Website
+                </a>
+              </div>
+            </div>
+            <div className="flex project-descrip">
+              <h3>{project.name}</h3>
+              <p>{project.about}</p>
+              <div className="project-stack">
+                <h3>{project.tools}</h3>
+              </div>
+            </div>
+          </div>
+        );
       })}
-      <Project 
-        img= "./../assets/projects/neon-clock.png"
-        name="Neon Clock"
-        about="Minimalist neon clocks."
-        tools="HTML CSS JavaScript"
-        githubLink="https://github.com/Nnisik/neon-clock"
-      />
     </div>
   );
 }

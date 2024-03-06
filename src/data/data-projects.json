@@ -10,7 +10,7 @@
     },
     {
         "id": 2,
-        "img": "./projects/bulletboard.png",
+        "img": "./projects/bulletboard.png'",
         "githubLink": "https://github.com/Nnisik/Bulleting-Board",
         "websiteLink": "",
         "name": "Bullet Board Site",
@@ -19,7 +19,7 @@
     },
     {
         "id": 3,
-        "img": "./projects/neon-clock/png",
+        "img": "./projects/neon-clock.png'",
         "githubLink": "https://github.com/Nnisik/neon-clock",
         "websiteLink": "",
         "name": "Neon Clock",
@@ -28,7 +28,7 @@
     },
     {
         "id": 4,
-        "img": "",
+        "img": "./projects/auction-promo.png'",
         "githubLink": "https://github.com/Nnisik/you-need-it-auction",
         "websiteLink": "https://nnisik.github.io/you-need-it-auction/",
         "name": "''You need it'' Auction",

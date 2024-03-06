@@ -1,8 +1,9 @@
 export default function Project(props) {
+
   return (
     <div className="flex project">
       <div className="flex project-promo">
-        <img src={props.img} alt="" />
+        <img src={require(props.img)} alt="" />
         <div className="flex project-links">
           <a href={props.githubLink} className="project-github-link"></a>
           <a href={props.websiteLink} className="project-website-link">
