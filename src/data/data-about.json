@@ -1,7 +1,5 @@
-[
-    {
-        "id": 1,
-        "header": "About me",
-        "text": "A passinate goal-oriented Entry Level Full-Stack Web-Developer with knowledge of HTML, CSS, JavaScript, React, Python Django and SQL seeking to use technical proficiency and creativity to develop engaging user experiences and advance in a professional career."
-    }
-]
+{
+    "id": 1,
+    "header": "About me",
+    "text": "A passinate goal-oriented Entry Level Full-Stack Web-Developer with knowledge of HTML, CSS, JavaScript, React, Python Django and SQL seeking to use technical proficiency and creativity to develop engaging user experiences and advance in a professional career."
+}

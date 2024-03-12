@@ -1,0 +1,30 @@
+#nav {
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-right: 2vh;
+}
+
+.nav-me {
+    font-size: 3vh;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #1f1f1f;
+}
+
+.nav-links {
+    flex-direction: row;
+    align-items: center;
+    gap: 3vh;
+}
+
+.nav-btn {
+    font-size: 2vh;
+    font-weight: bold;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #1f1f1f;
+    text-decoration: none;
+}

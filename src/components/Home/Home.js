@@ -1,5 +1,6 @@
 import LinksSection from "./LinksSection";
 import StackSection from "./StackSection";
+import './style/style.css';
 
 export default function Home() {
     return (

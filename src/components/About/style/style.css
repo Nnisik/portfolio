@@ -1,0 +1,20 @@
+#about {
+    justify-content: center;
+    align-items: baseline;
+    gap: 5vh;
+    width: 100%;
+}
+
+.about-me {
+    width: 1000px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #1f1f1f;
+    margin: 1vh 0;
+}
+
+.about-me > p {
+    text-align: start;
+    margin: 2vh 0;
+}

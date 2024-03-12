@@ -6,7 +6,11 @@
         "websiteLink": "",
         "name": "Search",
         "about": "CS50w Project 0 - front-end for Google Search, Google Image Search, and Google Advanced Search.",
-        "tools": "HTML SaSS"
+        "tools": [
+            "HTML",
+            "SaSS"
+        ],
+        "type": "front"
     },
     {
         "id": 2,
@@ -15,7 +19,11 @@
         "websiteLink": "",
         "name": "Bullet Board Site",
         "about": "Bulleting board project.",
-        "tools": "PHP ReactJS"
+        "tools": [
+            "PHP",
+            "ReactJS"
+        ],
+        "type": "full"
     },
     {
         "id": 3,
@@ -24,7 +32,12 @@
         "websiteLink": "",
         "name": "Neon Clock",
         "about": "Minimalist neon clocks.",
-        "tools": "HTML CSS JavaScript"
+        "tools": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "type": "front"
     },
     {
         "id": 4,
@@ -33,6 +46,50 @@
         "websiteLink": "https://nnisik.github.io/you-need-it-auction/",
         "name": "''You need it'' Auction",
         "about": "Single page auction page application.",
-        "tools": "HTML CSS"
+        "tools": [
+            "HTML",
+            "CSS"
+        ],
+        "type": "front"
+    },
+    {
+        "id": 5,
+        "img": "",
+        "githubLink": "",
+        "websiteLink": "",
+        "name": "Theme switcher",
+        "about": "",
+        "tools": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "type": "front"
+    },
+    {
+        "id": 6,
+        "img": "",
+        "githubLink": "",
+        "websiteLink": "",
+        "name": "Video player page",
+        "about": "",
+        "tools": [
+            "HTML",
+            "SaSS"
+        ],
+        "type": "front"
+    },
+    {
+        "id": 7,
+        "img":"",
+        "githubLink": "",
+        "websiteLink": "",
+        "name": "Coffee Shop",
+        "about": "",
+        "tools": [
+            "ReactJS",
+            "SaSS"
+        ],
+        "type": "front"
     }
 ]

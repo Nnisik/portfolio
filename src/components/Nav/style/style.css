@@ -1,0 +1,43 @@
+#nav {
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-right: 2vh;
+}
+
+.theme-switcher {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 20px;
+  width: 20px;
+  background: rgb(255, 217, 0);
+  border-radius: 50%;
+  border: none;
+}
+
+.nav-me {
+  font-size: 3vh;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #1f1f1f;
+}
+
+.nav-links {
+  flex-direction: row;
+  align-items: center;
+  gap: 3vh;
+}
+
+.nav-btn {
+  font-size: 2vh;
+  font-weight: bold;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #1f1f1f;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */

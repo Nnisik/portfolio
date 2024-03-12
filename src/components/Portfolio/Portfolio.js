@@ -1,32 +1,48 @@
 import Project from "./Project";
-import dataProjects from "../../data/data-projects.json";
+import Data from "../../data/data-projects.json";
+import "./style/style.css";
+import React, { useState } from "react";
+
 
 export default function Portfolio() {
+  const [projects, setProjects] = React.useState(Data);
+
+  const filterFrontProjects = () => {
+    const newItems = Data.filter((project) => {
+      return project.type === "front";
+    });
+    setProjects(newItems);
+  };
+
+  const filterBackProjects = () => {
+    const newItems = Data.filter((project) => {
+      return project.type === "back" || project.type === "full";
+    });
+    setProjects(newItems);
+  };
+
   return (
     <div id="portfolio" className="flex">
       <h1>Portfolio</h1>
-      {dataProjects.map((project) => {
-        return (
-          <div className="flex project">
-            <div className="flex project-promo">
-              <img src={project.img} alt="" />
-              <div className="flex project-links">
-                <a href={project.githubLink} className="project-github-link"></a>
-                <a href={project.websiteLink} className="project-website-link">
-                  Website
-                </a>
-              </div>
-            </div>
-            <div className="flex project-descrip">
-              <h3>{project.name}</h3>
-              <p>{project.about}</p>
-              <div className="project-stack">
-                <h3>{project.tools}</h3>
-              </div>
-            </div>
-          </div>
-        );
-      })}
+      <div class="portfolio-selection">
+        <button className="filter-btn" onClick={() => setProjects(Data)}>All</button>
+        <button className="filter-btn" onClick={() => filterFrontProjects()}>Frontend</button>
+        <button className="filter-btn" onClick={() => filterBackProjects()}>Backend</button>
+      </div>
+      <div class="portfolio">
+        {projects.map((project) => {
+          return (
+            <Project
+              key={project.id}
+              name={project.name}
+              text={project.about}
+              stack={project.stack}
+              githubLink={project.githubLink}
+              websiteLink={project.websiteLink}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 }
