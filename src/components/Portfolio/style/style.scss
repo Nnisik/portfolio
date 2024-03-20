@@ -1,0 +1,118 @@
+.project-stack {
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#portfolio {
+    height: fit-content;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: 5vh 0;
+}
+
+.portfolio-selection {
+    display: flex;
+    gap: 3vh;
+    margin: 2vh auto 4vh;
+}
+
+.filter-btn {
+    width: 120px;
+    padding: 5px 0;
+    border-radius: 15px;
+    border: 2px solid paleturquoise;
+    color: rgb(103, 141, 141);
+    background: transparent;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 90%;
+    gap: 20px;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: fit-content;
+    gap: 50px;
+}
+
+.project-info {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+}
+
+.project-header {
+    font-size: 30px;
+}
+
+.project-description {
+    margin: 15px 0;
+    font-size: 16px;
+    width: 80%;
+}
+
+.project-stack {
+    display: flex;
+    gap: 12px;
+    width: 60%;
+}
+
+.project-links {
+    margin: 12px 0;
+}
+
+.project-links > a:hover {
+    font-weight: bold;
+    transform: translateX(45px);
+}
+
+.project-links > a:hover::before {
+    transform: scale(1.2);
+    top: 20%;
+    left: -30px;
+}
+
+.project_github-link {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    transform: translateX(30px);
+    transition-duration: 0.5s;
+}
+
+.project_github-link::before {
+    content: " ";
+    background: url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg");
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: -20%;
+    transform: translate(-10%, -40%);
+}
+
+.project_website-link {
+    transform: translateX(70px);
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+.project-img {
+    height: 400px;
+    aspect-ratio: 16/10;
+    border: 1px solid red;
+}

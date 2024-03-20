@@ -39,6 +39,8 @@ export default function Portfolio() {
               stack={project.stack}
               githubLink={project.githubLink}
               websiteLink={project.websiteLink}
+              tools={project.tools}
+              img={project.img}
             />
           );
         })}

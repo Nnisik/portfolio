@@ -14,7 +14,7 @@
     },
     {
         "id": 2,
-        "img": "./projects/bulletboard.png'",
+        "img": "./projects/bulletboard.png",
         "githubLink": "https://github.com/Nnisik/Bulleting-Board",
         "websiteLink": "",
         "name": "Bullet Board Site",
